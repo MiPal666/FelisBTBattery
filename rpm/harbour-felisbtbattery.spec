@@ -1,7 +1,7 @@
 Name:       harbour-felisbtbattery
 Summary:    Bluetooth audio battery monitor and connection control for Sailfish OS
 Version:    0.2.0
-Release:    1
+Release:    2
 Group:      Qt/Qt
 License:    GPL-3.0-or-later AND GPL-2.0-or-later
 URL:        https://github.com/MiPal666/FelisBTBattery
@@ -47,19 +47,19 @@ desktop-file-install --delete-original \
     %{buildroot}%{_datadir}/applications/*.desktop
 
 %post
-# Load the bundled oFono plugin after install/upgrade. A2DP media playback is
-# handled outside oFono, but an active HFP call may be affected by this restart.
 systemctl try-restart ofono.service >/dev/null 2>&1 || :
+systemctl try-restart bluetooth.service >/dev/null 2>&1 || :
 
 %postun
-# $1 == 0 means final removal. During an upgrade the new package already ran
-# its %post, so avoid an unnecessary second oFono restart.
 if [ "$1" -eq 0 ]; then
     systemctl try-restart ofono.service >/dev/null 2>&1 || :
+    systemctl try-restart bluetooth.service >/dev/null 2>&1 || :
 fi
 
 %files
 %defattr(-,root,root,-)
+%license LICENSE
+%license backend/LICENSE.GPL-2.0
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
