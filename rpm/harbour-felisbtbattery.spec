@@ -42,9 +42,7 @@ It does not estimate charge or use vendor-specific battery protocols.
 %qmake5_install
 make -C backend DESTDIR=%{buildroot} install
 
-desktop-file-install --delete-original \
-    --dir %{buildroot}%{_datadir}/applications \
-    %{buildroot}%{_datadir}/applications/*.desktop
+desktop-file-install --delete-original --dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*.desktop
 
 %post
 systemctl try-restart ofono.service >/dev/null 2>&1 || :
