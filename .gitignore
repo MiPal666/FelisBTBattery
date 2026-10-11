@@ -1,0 +1,16 @@
+*.o
+*.so
+*.qm
+*.rpm
+*.tar.gz
+*.tar.bz2
+*.zip
+Makefile
+moc_*
+qrc_*
+RPMS/
+BUILD/
+BUILDROOT/
+SOURCES/
+SPECS/
+SRPMS/
