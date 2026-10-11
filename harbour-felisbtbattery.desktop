@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-felisbtbattery
+Exec=harbour-felisbtbattery
+Name=Felis BT Battery Audio
+Name[cs]=Felis BT Battery Audio
+Comment=Bluetooth battery monitor and connection control
+Comment[cs]=Stav baterií a připojení Bluetooth zařízení
+
+[X-Sailjail]
+OrganizationName=cz.feliscatus
+ApplicationName=felisbtbattery
+Permissions=Bluetooth
