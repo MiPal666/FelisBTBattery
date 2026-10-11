@@ -1,0 +1,27 @@
+* Sun Oct 11 2026 Michal Kasik <MiPal666@users.noreply.github.com> - 0.2.0-1
+- First unified Felis BT Battery Audio package.
+- Bundle the tested oFono 0.1.4 battery provider backend in the GUI RPM.
+- Replace the old fixed-delay registration with BlueZ/HFP readiness ordering.
+- Obsolete the former standalone felisbtbattery-ofono-plugin package.
+- Restart oFono on installation and final removal so the plugin is loaded/unloaded.
+- Add custom Felis cat + Bluetooth application icon.
+- Keep paired-device connect/disconnect control, NOTICE page and Czech translation.
+- Keep generic multi-Battery1 GUI support; physical left/right/case and non-audio
+  battery hardware remains unverified.
+
+* Sat Oct 10 2026 Michal Kasik <MiPal666@users.noreply.github.com> - 0.1.2-1
+- Rename the visible application to Felis BT Battery Audio.
+- Keep paired Bluetooth devices visible when disconnected.
+- Add tap-to-connect / tap-to-disconnect through BlueZ Device1.
+- Add a prominent NOTICE page describing tested scope and limitations.
+- Add Czech UI translation.
+- Add generic support for multiple BlueZ Battery1 component objects when
+  Device and Identifier properties are available; no battery values are
+  estimated or combined.
+
+* Mon Oct 05 2026 Michal Kasik <MiPal666@users.noreply.github.com> - 0.1.1-1
+- Enable the Sailjail Bluetooth permission instead of disabling sandboxing.
+- Keep direct BlueZ Device1/Battery1 monitoring over the system D-Bus.
+
+* Mon Oct 05 2026 Michal Kasik <MiPal666@users.noreply.github.com> - 0.1.0-1
+- Initial development prototype.
