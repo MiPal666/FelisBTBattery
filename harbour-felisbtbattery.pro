@@ -25,8 +25,11 @@ DISTFILES += \
     backend/README.md \
     backend/Makefile \
     backend/src/felisbtbattery.c \
+    backend/src/felisbtbattery.part1.inc \
+    backend/src/felisbtbattery.part2.inc \
+    backend/src/felisbtbattery.part3.inc \
+    backend/src/felisbtbattery.part4.inc \
     backend/LICENSE.GPL-2.0 \
-    harbour-felisbtbattery.png \
     icons/86x86/harbour-felisbtbattery.png \
     icons/108x108/harbour-felisbtbattery.png \
     icons/128x128/harbour-felisbtbattery.png \
