@@ -14,3 +14,6 @@ BUILDROOT/
 SOURCES/
 SPECS/
 SRPMS/
+documentation.list
+/harbour-felisbtbattery
+/translations/harbour-felisbtbattery.ts
