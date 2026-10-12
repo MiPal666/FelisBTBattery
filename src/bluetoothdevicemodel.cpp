@@ -69,6 +69,7 @@ QVariant BluetoothDeviceModel::data(const QModelIndex &index, int role) const
     case NameRole:              return d.name;
     case AddressRole:           return d.address;
     case IconRole:              return d.icon;
+    case DeviceClassRole:       return d.deviceClass;
     case ConnectedRole:         return d.connected;
     case PairedRole:            return d.paired;
     case BatteryAvailableRole:  return !d.batteries.isEmpty();
@@ -86,6 +87,7 @@ QHash<int, QByteArray> BluetoothDeviceModel::roleNames() const
     roles[NameRole] = "deviceName";
     roles[AddressRole] = "address";
     roles[IconRole] = "deviceIcon";
+    roles[DeviceClassRole] = "deviceClass";
     roles[ConnectedRole] = "connected";
     roles[PairedRole] = "paired";
     roles[BatteryAvailableRole] = "batteryAvailable";
@@ -232,6 +234,7 @@ void BluetoothDeviceModel::refresh()
         d.name = displayName(devProps);
         d.address = devProps.value(QStringLiteral("Address")).toString();
         d.icon = devProps.value(QStringLiteral("Icon")).toString();
+        d.deviceClass = devProps.value(QStringLiteral("Class")).toUInt();
         d.connected = devProps.value(QStringLiteral("Connected")).toBool();
         d.paired = devProps.value(QStringLiteral("Paired")).toBool();
 

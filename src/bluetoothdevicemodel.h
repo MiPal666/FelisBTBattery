@@ -24,6 +24,7 @@ public:
         NameRole,
         AddressRole,
         IconRole,
+        DeviceClassRole,
         ConnectedRole,
         PairedRole,
         BatteryAvailableRole,
@@ -65,6 +66,7 @@ private:
         QString name;
         QString address;
         QString icon;
+        quint32 deviceClass = 0;
         bool connected = false;
         bool paired = false;
         int batteryPercentage = -1; // Overall battery only, never an estimate.

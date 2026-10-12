@@ -8,6 +8,7 @@ URL:        https://github.com/MiPal666/FelisBTBattery
 Source0:    %{name}-%{version}.tar.bz2
 
 Requires:   sailfishsilica-qt5 >= 0.10.9
+Requires:   sailfish-components-bluetooth-qt5
 Requires:   ofono >= 1.29
 Provides:   felisbtbattery-ofono-plugin = 0.1.4
 Obsoletes:  felisbtbattery-ofono-plugin < 0.1.5

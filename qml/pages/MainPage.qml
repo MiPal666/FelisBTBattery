@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import Sailfish.Bluetooth 1.0
 
 Page {
     id: page
@@ -64,6 +65,12 @@ Page {
             width: listView.width
             height: contentColumn.height + 2 * Theme.paddingMedium
 
+            BluetoothDeviceInfo {
+                id: deviceInfo
+                address: model.address
+                deviceClass: model.deviceClass
+            }
+
             onClicked: btModel.toggleDeviceConnection(objectPath, connected)
 
             Column {
@@ -77,8 +84,16 @@ Page {
                     width: parent.width
                     spacing: Theme.paddingMedium
 
+                    Image {
+                        id: deviceTypeIcon
+                        width: Theme.iconSizeMedium
+                        height: Theme.iconSizeMedium
+                        anchors.verticalCenter: parent.verticalCenter
+                        source: "image://theme/" + (deviceInfo.icon || "icon-m-bluetooth")
+                    }
+
                     Column {
-                        width: parent.width - stateLabel.width - Theme.paddingMedium
+                        width: parent.width - deviceTypeIcon.width - stateLabel.width - 2 * Theme.paddingMedium
 
                         Label {
                             width: parent.width
