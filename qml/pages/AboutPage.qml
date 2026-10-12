@@ -64,7 +64,7 @@ Page {
                 width: parent.width - 2 * Theme.horizontalPageMargin
                 x: Theme.horizontalPageMargin
                 wrapMode: Text.WordWrap
-                text: qsTr("Version 0.2.0")
+                text: qsTr("Version 0.2.1")
                 color: Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeExtraSmall
             }

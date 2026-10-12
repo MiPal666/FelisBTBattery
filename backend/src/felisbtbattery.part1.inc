@@ -43,7 +43,7 @@ extern gboolean g_dbus_remove_watch(DBusConnection *connection, guint tag);
 
 #define PROVIDER_ROOT "/org/ofono/felisbtbattery"
 #define DIAGNOSTICS_IFACE "org.feliscatus.FelisBTBattery.Diagnostics1"
-#define PLUGIN_VERSION "0.2.0"
+#define PLUGIN_VERSION "0.2.1"
 
 struct battery_ctx {
 	gint refs;

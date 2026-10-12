@@ -55,7 +55,7 @@
     <message><source>Tap a paired device to connect or disconnect it through BlueZ.</source><translation>Klepnutím na spárované zařízení jej přes BlueZ připojíte nebo odpojíte.</translation></message>
     <message><source>The application shows only battery information actually reported by Bluetooth devices. It does not estimate charge from voltage.</source><translation>Aplikace zobrazuje pouze informace o baterii skutečně hlášené Bluetooth zařízením. Stav baterie neodhaduje z napětí.</translation></message>
     <message><source>The package includes the FelisBTBattery oFono companion plugin, which publishes supported HFP audio battery reports to BlueZ.</source><translation>Balíček obsahuje doprovodný oFono plugin FelisBTBattery, který publikuje podporované HFP údaje o baterii audio zařízení do BlueZ.</translation></message>
-    <message><source>Version 0.2.0</source><translation>Verze 0.2.0</translation></message>
+    <message><source>Version 0.2.1</source><translation>Verze 0.2.1</translation></message>
 </context>
 <context>
     <name>CoverPage</name>

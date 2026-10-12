@@ -1,7 +1,7 @@
 Name:       harbour-felisbtbattery
 Summary:    Bluetooth audio battery monitor and connection control for Sailfish OS
-Version:    0.2.0
-Release:    2
+Version:    0.2.1
+Release:    1
 Group:      Qt/Qt
 License:    GPL-3.0-or-later AND GPL-2.0-or-later
 URL:        https://github.com/MiPal666/FelisBTBattery

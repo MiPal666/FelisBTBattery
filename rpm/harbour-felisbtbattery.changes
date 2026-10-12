@@ -1,3 +1,13 @@
+* Mon Oct 12 2026 Michal Kasik <MiPal666@users.noreply.github.com> - 0.2.1-1
+- Add native Sailfish Bluetooth device-type icons using Sailfish.Bluetooth.
+- Export BlueZ Device1 Class to QML for BluetoothDeviceInfo icon selection.
+- Keep system-provided device classification without vendor/name-specific overrides.
+
+* Sun Oct 11 2026 Michal Kasik <MiPal666@users.noreply.github.com> - 0.2.0-2
+- Fix application icon assets for all Sailfish icon sizes.
+- Add full GPL-3.0 and GPL-2.0 license texts.
+- Restart Bluetooth after oFono on install and final removal so devices perform a fresh battery handshake.
+
 * Sun Oct 11 2026 Michal Kasik <MiPal666@users.noreply.github.com> - 0.2.0-1
 - First unified Felis BT Battery Audio package.
 - Bundle the tested oFono 0.1.4 battery provider backend in the GUI RPM.
